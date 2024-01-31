@@ -1,7 +1,7 @@
 txt = "  The quick brown fox jumps over the lazy dog.  "
 
 ###############################################################################
-# TODO: 1. (1 pt)
+# DONE: 1. (1 pt)
 #   Notice the string   txt   that I have defined above. First, let's clear up
 #   those extra spaces.
 #
@@ -11,6 +11,7 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 #       Use a method to do this for you and don't simply copy and paste the
 #       string but without the spaces.
 #       (HINT: the method that you need was in your pre-class materials)
+txt = txt.strip()
 #   
 #   We will be using the updated string (which should still be called   txt   )
 #
@@ -18,7 +19,7 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 ###############################################################################
 
 ###############################################################################
-# TODO: 2. (1 pt)
+# DONE: 2. (1 pt)
 #   From now on, do not reassign the variable   txt   . You will be using it as
 #   your starter string for the rest of these exercises.
 #
@@ -30,9 +31,12 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+if "quick" in txt:
+    a = "quick"
+    print(a)
 
 ###############################################################################
-# TODO: 3. (1 pt)
+# DONE: 3. (1 pt)
 #   Let's add another sentence to our string.
 #
 #   Immediately below this _TODO_, write code that:
@@ -45,3 +49,6 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+txt2 = 'I love frisbee'
+b = txt + " " + txt2
+print(b)
